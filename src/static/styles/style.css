@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #cac3ff, #a18dff);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    max-width: 600px;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    transform: scale(1.05);
+}
+
+form button {
+    color: #a18dff;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form button:hover {
+    background: #d88771;
+    color: white;
+}
+
+.todo-item {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.todo-list {
+    width: 100%;
+    list-style: none;
+}
+.todo:hover {
+    transform: scale(1.05);
+}
+
+.todo {
+    margin: 0.7rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.todo li {
+    flex: 1;
+}
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(73, 204, 73);
+}
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
